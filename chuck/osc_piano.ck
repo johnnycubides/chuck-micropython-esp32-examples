@@ -2,7 +2,7 @@
 OscIn oin;
 OscMsg msg;
 9001 => oin.port;
-oin.addAddress("/dev1/teclado, i");
+oin.addAddress("/dev1/piano, i");
 
 // Sintetizador de piano
 Rhodey piano => dac;
@@ -22,7 +22,7 @@ fun void listenOSC() {
         oin => now;
         
         while (oin.recv(msg)) {
-            if (msg.address == "/dev1/teclado") {
+            if (msg.address == "/dev1/piano") {
                 msg.getInt(0) => int note;
                 <<< "Nota recibida:", note >>>;
                 
