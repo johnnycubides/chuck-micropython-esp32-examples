@@ -98,7 +98,8 @@ make putAsMain f=dev1.py p=/dev/ttyUSB0 # Subir script como main.py
 ```bash
 make t p=/dev/ttyUSB0
 ```
+> Para salir de picocom que conecta a micropython, ejecute la secuencia **CTRL+a** y luego **CTRL+x**.
 
 5. Si envía datos por UART a través de los pines indicados en `./dev1.py`
-   (TX_PIN y RX_PIN)o si oprime el botón de BOOT/USER el esp32 enviará datos al
+   (TX_PIN y RX_PIN) o si oprime el botón de BOOT/USER el esp32 enviará datos al
 servicio de Chuck.
