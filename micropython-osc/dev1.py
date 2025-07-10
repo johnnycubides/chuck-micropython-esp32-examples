@@ -6,7 +6,7 @@ from client import Client
 # NETWORK
 SSID = "luna"
 PASSWORD = "loderunner"
-# MQTT DEFINITIONS
+# OSC DEFINITIONS
 OSC_SERVER = "192.168.2.105"
 OSC_PORT = 9001
 CLIENT_ID = "/dev1"
