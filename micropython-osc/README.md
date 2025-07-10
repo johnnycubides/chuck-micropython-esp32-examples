@@ -93,8 +93,12 @@ make put f=client.py p=/dev/ttyUSB0 # Subir dependencia
 make putAsMain f=dev1.py p=/dev/ttyUSB0 # Subir script como main.py
 ```
 
-4. Finalmente, oprima el botón de **reset** del esp32 y ejecute el siguiente comando para depurar los resultados:
+4. Oprima el botón de **reset** del esp32 y ejecute el siguiente comando para depurar los resultados:
 
 ```bash
 make t p=/dev/ttyUSB0
 ```
+
+5. Si envía datos por UART a través de los pines indicados en `./dev1.py`
+   (TX_PIN y RX_PIN)o si oprime el botón de BOOT/USER el esp32 enviará datos al
+servicio de Chuck.
