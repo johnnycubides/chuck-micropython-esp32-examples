@@ -64,7 +64,7 @@ Resultado:
        valid_lft forever preferred_lft forever
 ```
 
-> En el ejemplo, la ip de la máquina que tiene el servicio de Chuck tiene el valor de **192.168.2.100**
+> En el ejemplo, la IP de la máquina que tiene el servicio de Chuck tiene el valor de **192.168.2.100**
 
 Ese valor deberá ser puesto en la variable `OSC_SERVER` del archivo `./dev1.py`, ejemplo:
 
@@ -76,7 +76,7 @@ CLIENT_ID = "/dev1"
 TOPIC_FLUTE = CLIENT_ID + "/flauta"
 ```
 
-2. Modifique los valores relacionados a el SSID y PASSWORD en el archivo `./dev1.py` los cuales
+2. Modifique los valores relacionados a SSID y PASSWORD en el archivo `./dev1.py` los cuales
 están relacionados a la conexión WiFi del esp32 como estación.
 
 ```py
@@ -85,7 +85,7 @@ SSID = "luna"
 PASSWORD = "loderunner"
 ```
 
-3. Instale los scripts de micropython para el ejemplo:
+3. Instale los scripts de Micropython para el ejemplo:
 
 ```bash
 make put f=common.py p=/dev/ttyUSB0 # Subir dependencia
@@ -98,7 +98,7 @@ make putAsMain f=dev1.py p=/dev/ttyUSB0 # Subir script como main.py
 ```bash
 make t p=/dev/ttyUSB0
 ```
-> Para salir de picocom que conecta a micropython, ejecute la secuencia **CTRL+a** y luego **CTRL+x**.
+> Para salir de picocom que conecta a Micropython, ejecute la secuencia **CTRL+a** y luego **CTRL+x**.
 
 5. Si envía datos por UART a través de los pines indicados en `./dev1.py`
    (TX_PIN y RX_PIN) o si oprime el botón de BOOT/USER el esp32 enviará datos al
