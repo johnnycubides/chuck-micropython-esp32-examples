@@ -7,9 +7,9 @@
 
 Para ejecutar este ejemplo, siga estos pasos:
 
-1. Instalación de micropython y los scripts en el esp32, estos pasos los puede encontrar en [./micropython-osc/README.md](./micropython-osc/README.md).
+1. Instalación de micropython y los scripts en el esp32, estos pasos los puede encontrar en [./micropython-osc/](./micropython-osc/README.md).
 
-2. Lanzar el servicio de ChucK como se explica en [./chuck/README.md](./chuck/README.md), seguido,
+2. Lanzar el servicio de ChucK como se explica en [./chuck/README.md](./chuck/), seguido,
 puede oprimir el botón de usuario en el ESP32 (BOOT/USER), esto hará que se envíen datos al servicio
 de chuck y pueden ser observados en la terminal de ChucK.
 
